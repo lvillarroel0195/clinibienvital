@@ -1,0 +1,273 @@
+/* ==========================================================================
+   1. CONFIGURACIÓN GLOBAL
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+    background-color: #aaccda; /* Color de fondo suave */
+}
+
+/* ==========================================================================
+   2. HEADER Y BANNER (Calidad preservada)
+   ========================================================================== */
+header {
+    background: #ffffff; 
+    padding: 0;
+    overflow: visible; /* Importante para que el menú no se corte */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner-container {
+    width: 100%;
+    max-width: 1000px; /* Evita que se estire y se vea borroso en PC */
+    line-height: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   3. MENÚ DESPLEGABLE (Versión circular fija original)
+   ========================================================================== */
+.menu-contenedor {
+    position: static; 
+    padding: 0;
+    z-index: 2000;
+}
+
+.boton-menu {
+    background-color: #0056b3;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%; /* Vuelve a ser un círculo perfecto */
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Posicionamiento fijo que te gustó */
+    position: fixed; 
+    right: 20px;     
+    top: 20px;       
+    z-index: 3000;   
+}
+
+.boton-menu:hover {
+    background-color: #007bff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+}
+
+.menu-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 180px; 
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    display: none; 
+    flex-direction: column;
+    overflow: hidden;
+    
+    /* Posicionamiento respecto al botón fijo */
+    position: fixed; 
+    right: 20px;
+    top: 80px;       
+    z-index: 3000;
+}
+
+.menu-lista.mostrar {
+    display: flex;
+}
+
+/* Estilo de los enlaces del menú */
+.menu-lista li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-lista li a:hover {
+    background-color: #f4f9ff;
+    color: #0056b3;
+}
+
+/* ==========================================================================
+   4. SECCIONES Y BOTONES DE ACCIÓN
+   ========================================================================== */
+section {
+    padding: 25px;
+    max-width: 800px;
+    margin: 20px auto; 
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #eef;
+    padding-bottom: 10px;
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.boton-accion {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #a9c1df;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.boton-accion:hover {
+    border-color: #007bff;
+    background-color: #f0f7ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+}
+
+/* ==========================================================================
+   5. REDES SOCIALES, ICONOS Y MAPA
+   ========================================================================== */
+.redes {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.icono-red {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.icono-red:hover { transform: scale(1.1); }
+
+/* Colores de marca */
+.fa-whatsapp { color: #25D366; font-size: 1.5rem; }
+.fa-instagram { color: #E4405F; font-size: 1.5rem; }
+.fa-facebook { color: #1877F2; font-size: 1.5rem; }
+.fa-map-marker-alt { color: #ea4335; }
+.fa-phone-alt { color: #34a853; }
+
+.mapa-interactivo {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    margin-top: 20px;
+    line-height: 0;
+}
+
+/* ==========================================================================
+   6. RESPONSIVE (MÓVIL)
+   ========================================================================== */
+@media (max-width: 600px) {
+    header {
+        background-color: #bfd8e2; 
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    /* Mantenemos el botón en la misma posición en móvil */
+    .boton-menu {
+        right: 15px;
+        top: 15px;
+    }
+
+    .menu-lista {
+        right: 15px;
+        top: 75px;
+        width: 170px;
+    }
+}
+
+/* Estilos para el acordeón de doctores */
+.doctor-item {
+    margin-bottom: 15px;
+}
+
+.doctor-header {
+    cursor: pointer;
+    justify-content: space-between; /* Para que la flecha quede al final */
+}
+
+.flecha-drop {
+    font-size: 0.9rem;
+    color: #a9c1df;
+    transition: transform 0.3s ease;
+}
+
+.doctor-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+    background: #f9fbff;
+    border-radius: 0 0 10px 10px;
+    margin-top: -5px; /* Une la caja con el botón superior */
+    padding: 0 20px;
+    opacity: 0;
+}
+
+/* Cuando el item está activo */
+.doctor-item.activo .doctor-info {
+    max-height: 500px; /* Suficiente para el texto */
+    padding: 20px;
+    opacity: 1;
+    border: 2px solid #a9c1df;
+    border-top: none;
+}
+
+.doctor-item.activo .flecha-drop {
+    transform: rotate(180deg);
+}
+
+.doctor-item.activo .doctor-header {
+    border-radius: 10px 10px 0 0;
+    background-color: #f0f7ff;
+}
+
+.doctor-info p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #444;
+}

@@ -15,7 +15,7 @@ body {
 header {
     background: #ffffff; 
     padding: 0;
-    overflow: visible; /* Importante para que el menú no se corte */
+    overflow: visible; 
     display: flex;
     justify-content: center;
     width: 100%;
@@ -49,7 +49,7 @@ header {
     width: 50px;
     height: 50px;
     border: none;
-    border-radius: 50%; /* Vuelve a ser un círculo perfecto */
+    border-radius: 50%; 
     font-size: 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -57,8 +57,6 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    /* Posicionamiento fijo que te gustó */
     position: fixed; 
     right: 20px;     
     top: 20px;       
@@ -82,8 +80,6 @@ header {
     display: none; 
     flex-direction: column;
     overflow: hidden;
-    
-    /* Posicionamiento respecto al botón fijo */
     position: fixed; 
     right: 20px;
     top: 80px;       
@@ -94,7 +90,6 @@ header {
     display: flex;
 }
 
-/* Estilo de los enlaces del menú */
 .menu-lista li a {
     display: flex;
     align-items: center;
@@ -158,7 +153,17 @@ h2 {
 }
 
 /* ==========================================================================
-   5. REDES SOCIALES, ICONOS Y MAPA
+   5. JUSTIFICACIÓN DE TEXTO (Específica para Nosotros y Doctores)
+   ========================================================================== */
+.texto-justificado p,
+.texto-justificado span,
+.doctor-info p {
+    text-align: justify;
+    hyphens: auto; /* Divide palabras largas para evitar huecos en móvil */
+}
+
+/* ==========================================================================
+   6. REDES SOCIALES, ICONOS Y MAPA
    ========================================================================== */
 .redes {
     display: flex;
@@ -180,7 +185,6 @@ h2 {
 
 .icono-red:hover { transform: scale(1.1); }
 
-/* Colores de marca */
 .fa-whatsapp { color: #25D366; font-size: 1.5rem; }
 .fa-instagram { color: #E4405F; font-size: 1.5rem; }
 .fa-facebook { color: #1877F2; font-size: 1.5rem; }
@@ -196,39 +200,15 @@ h2 {
 }
 
 /* ==========================================================================
-   6. RESPONSIVE (MÓVIL)
+   7. ACORDEÓN DE DOCTORES
    ========================================================================== */
-@media (max-width: 600px) {
-    header {
-        background-color: #bfd8e2; 
-    }
-
-    section {
-        margin: 15px;
-        padding: 15px;
-    }
-
-    /* Mantenemos el botón en la misma posición en móvil */
-    .boton-menu {
-        right: 15px;
-        top: 15px;
-    }
-
-    .menu-lista {
-        right: 15px;
-        top: 75px;
-        width: 170px;
-    }
-}
-
-/* Estilos para el acordeón de doctores */
 .doctor-item {
     margin-bottom: 15px;
 }
 
 .doctor-header {
     cursor: pointer;
-    justify-content: space-between; /* Para que la flecha quede al final */
+    justify-content: space-between; 
 }
 
 .flecha-drop {
@@ -243,14 +223,13 @@ h2 {
     transition: all 0.4s ease-out;
     background: #f9fbff;
     border-radius: 0 0 10px 10px;
-    margin-top: -5px; /* Une la caja con el botón superior */
+    margin-top: -5px; 
     padding: 0 20px;
     opacity: 0;
 }
 
-/* Cuando el item está activo */
 .doctor-item.activo .doctor-info {
-    max-height: 500px; /* Suficiente para el texto */
+    max-height: 600px; 
     padding: 20px;
     opacity: 1;
     border: 2px solid #a9c1df;
@@ -270,4 +249,35 @@ h2 {
     font-size: 0.95rem;
     margin-bottom: 10px;
     color: #444;
+}
+
+/* ==========================================================================
+   8. RESPONSIVE (MÓVIL)
+   ========================================================================== */
+@media (max-width: 600px) {
+    header {
+        background-color: #bfd8e2; 
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .boton-menu {
+        right: 15px;
+        top: 15px;
+    }
+
+    .menu-lista {
+        right: 15px;
+        top: 75px;
+        width: 170px;
+    }
+
+    .redes {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
 }

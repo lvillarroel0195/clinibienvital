@@ -14,19 +14,16 @@ if (btnMenu && menuLista) {
     });
 }
 
-// 2. LÓGICA DE DOCTORES (ACORDEÓN)
-const doctorHeaders = document.querySelectorAll('.doctor-header');
+// 2. LÓGICA DE ACORDEONES (MODO INDEPENDIENTE)
+const headers = document.querySelectorAll('.doctor-header');
 
-if (doctorHeaders.length > 0) {
-    doctorHeaders.forEach(header => {
+if (headers.length > 0) {
+    headers.forEach(header => {
         header.addEventListener('click', () => {
             const item = header.parentElement;
             
-            // Cierra otros doctores abiertos (opcional, para limpieza)
-            document.querySelectorAll('.doctor-item').forEach(otherItem => {
-                if (otherItem !== item) otherItem.classList.remove('activo');
-            });
-
+            // Alternamos 'activo' solo en el elemento clickeado
+            // Esto permite tener múltiples servicios abiertos a la vez
             item.classList.toggle('activo');
         });
     });

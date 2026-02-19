@@ -200,55 +200,64 @@ h2 {
 }
 
 /* ==========================================================================
-   7. ACORDEÓN DE DOCTORES
+   7. ACORDEONES (Doctores y Servicios)
    ========================================================================== */
-.doctor-item {
-    margin-bottom: 15px;
-}
 
-.doctor-header {
+/* Reglas comunes para ambos */
+.doctor-header, .servicio-header {
     cursor: pointer;
-    justify-content: space-between; 
+    justify-content: center; /* Centra el texto */
+    position: relative;
+    text-align: center;
 }
 
 .flecha-drop {
-    font-size: 0.9rem;
-    color: #a9c1df;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     transition: transform 0.3s ease;
 }
 
+/* Doctores - Estilos específicos */
+.doctor-item { margin-bottom: 15px; }
 .doctor-info {
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s ease-out;
     background: #f9fbff;
-    border-radius: 0 0 10px 10px;
-    margin-top: -5px; 
-    padding: 0 20px;
     opacity: 0;
 }
-
 .doctor-item.activo .doctor-info {
-    max-height: 600px; 
+    max-height: 800px;
     padding: 20px;
     opacity: 1;
     border: 2px solid #a9c1df;
     border-top: none;
 }
 
-.doctor-item.activo .flecha-drop {
-    transform: rotate(180deg);
+/* Servicios - Estilos específicos (Independientes) */
+.servicio-item { margin-bottom: 15px; }
+.servicio-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+    background: #f4faff; /* Un tono ligeramente distinto si deseas */
+    opacity: 0;
+    padding: 0 20px;
+}
+.servicio-item.activo .servicio-info {
+    max-height: 800px;
+    padding: 20px;
+    opacity: 1;
+    border: 2px solid #0056b3; /* Borde más marcado para servicios */
+    border-top: none;
 }
 
-.doctor-item.activo .doctor-header {
-    border-radius: 10px 10px 0 0;
-    background-color: #f0f7ff;
-}
-
-.doctor-info p {
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-    color: #444;
+/* Rotación de flecha para ambos */
+.doctor-item.activo .flecha-drop, 
+.servicio-item.activo .flecha-drop {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 /* ==========================================================================

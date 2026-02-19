@@ -1,4 +1,4 @@
-// 1. LÓGICA DEL MENÚ
+// 1. LÓGICA DEL MENÚ PRINCIPAL
 const btnMenu = document.getElementById('btnMenu');
 const menuLista = document.getElementById('menuLista');
 
@@ -14,17 +14,18 @@ if (btnMenu && menuLista) {
     });
 }
 
-// 2. LÓGICA DE ACORDEONES (MODO INDEPENDIENTE)
-const headers = document.querySelectorAll('.doctor-header');
-
-if (headers.length > 0) {
+// 2. LÓGICA DE ACORDEONES INDEPENDIENTES
+// Función para activar acordeones sin cerrar los demás
+function configurarAcordeon(claseHeader) {
+    const headers = document.querySelectorAll(claseHeader);
     headers.forEach(header => {
         header.addEventListener('click', () => {
             const item = header.parentElement;
-            
-            // Alternamos 'activo' solo en el elemento clickeado
-            // Esto permite tener múltiples servicios abiertos a la vez
             item.classList.toggle('activo');
         });
     });
 }
+
+// Inicializamos Doctores y Servicios por separado
+configurarAcordeon('.doctor-header');
+configurarAcordeon('.servicio-header');

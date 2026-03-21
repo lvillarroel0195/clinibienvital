@@ -1,20 +1,21 @@
 /* ==========================================================================
-   1. CONFIGURACIÓN GLOBAL Y COLORES SOFT
+   1. CONFIGURACIÓN GLOBAL Y COLORES (CLARO - GRIS AZULADO PASTEL)
    ========================================================================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
-    color: #3B4252; /* Gris carbón suave para el texto */
-    background-color: #E5E9F0; /* Fondo gris-azulado mate (Cero reflejo) */
+    color: #334155; /* Gris pizarra oscuro para excelente lectura */
+    background-color: #bfdef7; /* Gris azulado pastel muy suave (Base) */
 }
 
 /* ==========================================================================
-   2. HEADER Y MENÚ PROFESIONAL (Logo Centrado)
+   2. HEADER Y MENÚ PROFESIONAL
    ========================================================================== */
 .header-profesional {
-    background-color: #F2F4F8; /* Tono hielo suave */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: #03057a; /* Blanco con una gota de azul (Hielo) */
+    box-shadow: 0 4px 15px rgba(0, 30, 60, 0.05);
+    border-bottom: 2px solid #ffffff;
     position: sticky;
     top: 0;
     z-index: 3000;
@@ -48,17 +49,17 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #3B4252;
+    color: #ebebeb; /* Gris azulado medio */
     font-weight: 600;
     font-size: 1.05rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .nav-links a:hover {
-    color: #0056b3; 
+    color: #0098b3; /* Tu azul corporativo */
 }
 
 /* ==========================================================================
@@ -71,11 +72,11 @@ body {
 }
 
 .fondo-blanco {
-    background-color: #ffffff;
+    background-color: #FAFCFF !important; /* Blanco hielo anti-reflejo */
 }
 
 .fondo-gris-suave {
-    background-color: #F8FAFC; 
+    background-color: #bfdef7 !important; /* Gris azulado pastel */
 }
 
 .contenedor-ancho {
@@ -86,7 +87,7 @@ body {
 
 .titulo-seccion {
     font-size: 2.2rem;
-    color: #0056b3;
+    color: #0056b3; 
     margin-top: 0;
     margin-bottom: 20px;
     text-align: center;
@@ -95,7 +96,7 @@ body {
 
 .subtitulo-seccion {
     text-align: center;
-    color: #64748B;
+    color: #64748B; 
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto 40px auto;
@@ -118,7 +119,7 @@ body {
 }
 
 .texto-limpio h4 {
-    color: #0F172A;
+    color: #0F172A; 
     font-size: 1.3rem;
     margin-top: 25px;
     margin-bottom: 15px;
@@ -133,23 +134,25 @@ body {
 /* Cuadrícula para Servicios y Nosotros */
 .cuadricula-3 {
     display: grid;
-    grid-template-columns: 1fr; /* 1 columna en móvil */
+    grid-template-columns: 1fr; 
     gap: 30px;
     margin-top: 30px;
 }
 
 .tarjeta-limpia {
-    background: #ffffff;
+    background: #FFFFFF !important; /* Tarjetas blancas limpias para resaltar */
+    border: 1px solid #E2E8F0 !important; /* Borde pastel */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 40, 80, 0.04) !important; 
     text-align: center;
-    border-top: 4px solid #0056b3;
-    transition: transform 0.3s ease;
+    border-top: 4px solid #0056b3 !important; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta-limpia:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 40, 80, 0.08) !important;
 }
 
 .tarjeta-limpia i {
@@ -159,7 +162,7 @@ body {
 }
 
 .tarjeta-limpia h3 {
-    color: #0F172A;
+    color: #0F172A; 
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 1.2rem;
@@ -175,7 +178,7 @@ body {
         width: 50%;
     }
     .cuadricula-3 {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en PC */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
@@ -183,9 +186,10 @@ body {
    5. ACORDEÓN DE DOCTORES (Equipo)
    ========================================================================== */
 .doctor-item {
-    background: #ffffff;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 40, 80, 0.04);
     margin-bottom: 15px;
     overflow: hidden;
 }
@@ -196,27 +200,27 @@ body {
     justify-content: space-between;
     padding: 20px;
     cursor: pointer;
-    background: #ffffff;
+    background: #FFFFFF;
     border-left: 4px solid #0056b3;
     transition: background 0.3s;
 }
 
 .doctor-header:hover {
-    background: #F8FAFC;
+    background: #F8FAFC; 
 }
 
 .doctor-header span {
     flex-grow: 1;
     margin-left: 15px;
     font-size: 1.1rem;
-    color: #334155;
+    color: #0F172A;
 }
 
 .doctor-info {
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s ease-out;
-    background: #F8FAFC;
+    background: #FAFCFF; 
     opacity: 0;
     padding: 0 20px;
 }
@@ -238,7 +242,7 @@ body {
 }
 
 /* ==========================================================================
-   6. RESPONSIVE MÓVIL (Menú sin botón hamburguesa)
+   6. RESPONSIVE MÓVIL
    ========================================================================== */
 @media (max-width: 768px) {
     .header-profesional {
@@ -286,7 +290,7 @@ body {
     width: 100%;
     height: auto; 
     border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
 }
 
 .modal-imagen {
@@ -294,7 +298,7 @@ body {
     position: fixed;
     z-index: 4000; 
     left: 0; top: 0; width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); 
+    background-color: rgba(0, 15, 30, 0.85); /* Fondo oscuro elegante */
     backdrop-filter: blur(5px); 
     overflow: auto;
 }
@@ -305,7 +309,7 @@ body {
     max-width: 90%;
     max-height: 90vh; 
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     animation: zoomIn 0.3s ease; 
 }
 
@@ -345,7 +349,7 @@ body {
     text-align: center;
     margin-top: 20px;
     padding-top: 40px;
-    border-top: 1px solid #E2E8F0; /* Una línea divisoria sutil */
+    border-top: 1px solid #E2E8F0; 
 }
 
 .info-contacto h3, .redes-sociales h3 {
@@ -367,7 +371,7 @@ body {
 .info-contacto i {
     color: #0056b3;
     font-size: 1.2rem;
-    width: 25px; /* Alinea los íconos perfectamente */
+    width: 25px; 
 }
 
 .iconos-redes {
@@ -382,22 +386,24 @@ body {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     color: #0056b3;
     border-radius: 50%;
     text-decoration: none;
     font-size: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 10px rgba(0, 40, 80, 0.04);
     transition: all 0.3s ease;
 }
 
 .icono-red:hover {
     background-color: #0056b3;
-    color: #ffffff;
-    transform: translateY(-5px); /* Pequeño salto al pasar el mouse */
+    color: #FFFFFF; 
+    border-color: #0056b3;
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 86, 179, 0.2);
 }
 
-/* En computadora se divide en dos columnas */
 @media (min-width: 768px) {
     .contacto-footer {
         flex-direction: row;
@@ -410,25 +416,25 @@ body {
 }
 
 /* ==========================================================================
-   ESTILOS PARA BOTONES DE CONTACTO (Teléfono y Correo)
+   9. ESTILOS PARA BOTONES DE CONTACTO (Teléfono y Correo)
    ========================================================================== */
 .enlace-contacto {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 12px;
-    background-color: #ffffff;
+    background-color: #FFFFFF; 
     color: #334155;
     padding: 12px 25px;
     border-radius: 50px; 
     text-decoration: none; 
     font-size: 1.05rem;
     font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 40, 80, 0.04);
     border: 1px solid #E2E8F0;
     transition: all 0.3s ease;
     width: fit-content;
-    margin: 0; /* CAMBIO: Quitamos el "0 auto" para que no se centre forzosamente */
+    margin: 0; 
 }
 
 .enlace-contacto i {
@@ -439,44 +445,43 @@ body {
 
 .enlace-contacto:hover {
     background-color: #0056b3;
-    color: #ffffff;
+    color: #FFFFFF; 
+    border-color: #0056b3;
     transform: translateY(-3px); 
     box-shadow: 0 6px 15px rgba(0, 86, 179, 0.2);
 }
 
 .enlace-contacto:hover i {
-    color: #ffffff; 
+    color: #FFFFFF; 
 }
 
 .contenedor-botones-contacto {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* CAMBIO: Obliga a los botones a alinearse a la izquierda */
+    align-items: flex-start; 
     gap: 15px; 
     margin-top: 15px;
 }
+
 /* ==========================================================================
-   ESTILOS PARA 2 SERVICIOS Y LISTAS DE TRATAMIENTOS
+   10. ESTILOS PARA 2 SERVICIOS Y LISTAS DE TRATAMIENTOS
    ========================================================================== */
-/* Cuadrícula de 2 columnas (para centrar y ampliar 2 tarjetas) */
 .cuadricula-2 {
     display: grid;
-    grid-template-columns: 1fr; /* 1 columna en celulares */
+    grid-template-columns: 1fr; 
     gap: 30px;
     margin-top: 40px;
-    max-width: 900px; /* Evita que se estiren demasiado en pantallas gigantes */
+    max-width: 900px; 
     margin-left: auto;
     margin-right: auto;
 }
 
-/* En PC se dividen en 2 columnas iguales */
 @media (min-width: 768px) {
     .cuadricula-2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Estilo elegante para las listas dentro de las tarjetas */
 .lista-tratamientos {
     text-align: left;
     margin: 0;
@@ -488,15 +493,15 @@ body {
     font-size: 0.95rem;
     margin-bottom: 8px;
     position: relative;
-    list-style-type: disc; /* Viñetas clásicas */
+    list-style-type: disc; 
 }
 
 .lista-tratamientos li::marker {
-    color: #0056b3; /* Pone las viñetas del mismo azul de la clínica */
+    color: #0056b3; 
 }
 
 /* ==========================================================================
-   ESTILOS PARA ACORDEÓN DE SERVICIOS (TARJETAS DESPLEGABLES)
+   11. ESTILOS PARA ACORDEÓN DE SERVICIOS (TARJETAS DESPLEGABLES)
    ========================================================================== */
 .servicio-item {
     display: flex;
@@ -508,10 +513,9 @@ body {
 }
 
 .servicio-header:hover {
-    opacity: 0.8; /* Efecto sutil al pasar el mouse indicando que es clickeable */
+    opacity: 0.8; 
 }
 
-/* El contenedor de la lista empieza invisible y sin altura */
 .servicio-info {
     max-height: 0;
     overflow: hidden;
@@ -519,20 +523,18 @@ body {
     opacity: 0;
 }
 
-/* Cuando se le da clic (el JS le agrega la clase 'activo' al servicio-item) */
 .servicio-item.activo .servicio-info {
-    max-height: 500px; /* Suficiente espacio para la lista */
+    max-height: 500px; 
     opacity: 1;
     margin-top: 20px;
     padding-top: 20px;
-    border-top: 1px solid #E2E8F0; /* Agrega una línea divisoria elegante */
+    border-top: 1px solid #E2E8F0; 
 }
 
-/* Animación de la flechita */
 .servicio-header .flecha-drop {
     transition: transform 0.3s ease;
 }
 
 .servicio-item.activo .servicio-header .flecha-drop {
-    transform: rotate(180deg); /* La flecha gira hacia arriba al abrir */
+    transform: rotate(180deg); 
 }

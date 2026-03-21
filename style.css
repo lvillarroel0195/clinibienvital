@@ -1,29 +1,29 @@
 /* ==========================================================================
-   1. CONFIGURACIÓN GLOBAL
+   1. CONFIGURACIÓN GLOBAL Y COLORES SOFT
    ========================================================================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     color: #3B4252; /* Gris carbón suave para el texto */
-    background-color: #acb6c7; /* Fondo gris-azulado mate (Cero reflejo) */
+    background-color: #E5E9F0; /* Fondo gris-azulado mate (Cero reflejo) */
 }
 
 /* ==========================================================================
    2. HEADER Y MENÚ PROFESIONAL (Logo Centrado)
    ========================================================================== */
 .header-profesional {
-    background-color: #F2F4F8; /* Tono hielo suave en lugar de blanco brillante */
+    background-color: #F2F4F8; /* Tono hielo suave */
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 3000;
     display: flex;
-    flex-direction: column; /* Apila el logo y el menú verticalmente en PC */
-    align-items: center;    /* Centra todo horizontalmente */
+    flex-direction: column; 
+    align-items: center;    
     padding: 15px 5%;
-    height: auto;           /* Permite que el contenedor crezca según necesite */
-    gap: 15px;              /* Espacio entre el logo y las opciones del menú */
+    height: auto;           
+    gap: 15px;              
 }
 
 .logo-container {
@@ -34,7 +34,7 @@ body {
 }
 
 .logo-img {
-    height: 70px; /* Un poco más grande para que destaque en el centro */
+    height: 70px; 
     width: auto;
     object-fit: contain;
 }
@@ -42,13 +42,13 @@ body {
 .nav-links {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Espacio entre cada opción del menú */
+    gap: 30px; 
     width: 100%;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #3B4252;
     font-weight: 600;
     font-size: 1.05rem;
     transition: color 0.3s ease;
@@ -58,251 +58,189 @@ body {
 }
 
 .nav-links a:hover {
-    color: #0056b3; /* Color azul al pasar el mouse */
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.8rem;
-    color: #0056b3;
-    cursor: pointer;
+    color: #0056b3; 
 }
 
 /* ==========================================================================
-   3. MENÚ DESPLEGABLE (Versión circular fija original)
+   3. DISEÑO DE BANDAS CLÍNICAS (FULL-WIDTH SECTIONS)
    ========================================================================== */
-.menu-contenedor {
-    position: static; 
-    padding: 0;
-    z-index: 2000;
+.seccion-clinica {
+    width: 100%;
+    padding: 70px 20px; 
+    box-sizing: border-box;
 }
 
-.boton-menu {
-    background-color: #0056b3;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%; 
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed; 
-    right: 20px;     
-    top: 20px;       
-    z-index: 3000;   
+.fondo-blanco {
+    background-color: #ffffff;
 }
 
-.boton-menu:hover {
-    background-color: #007bff;
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.5);
+.fondo-gris-suave {
+    background-color: #F8FAFC; 
 }
 
-.menu-lista {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 180px; 
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    display: none; 
-    flex-direction: column;
-    overflow: hidden;
-    position: fixed; 
-    right: 20px;
-    top: 80px;       
-    z-index: 3000;
+.contenedor-ancho {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-.menu-lista.mostrar {
-    display: flex;
-}
-
-.menu-lista li a {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 15px 20px;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.menu-lista li a:hover {
-    background-color: #f4f9ff;
+.titulo-seccion {
+    font-size: 2.2rem;
     color: #0056b3;
-}
-
-/* ==========================================================================
-   4. SECCIONES Y BOTONES DE ACCIÓN
-   ========================================================================== */
-section {
-    padding: 25px;
-    max-width: 800px;
-    margin: 20px auto; 
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-h2 {
-    color: #0056b3;
-    border-bottom: 2px solid #eef;
-    padding-bottom: 10px;
-}
-
-.contenedor-botones {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    margin-top: 0;
     margin-bottom: 20px;
-}
-
-.boton-accion {
-    text-decoration: none;
-    color: #333;
-    background-color: #F2F4F8;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border: 1px solid #D8DEE9;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    transition: all 0.3s ease;
-    font-weight: 500;
-}
-
-.boton-accion:hover {
-    border: 1px solid #D8DEE9;
-    background-color: #F2F4F8;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-}
-
-/* ==========================================================================
-   5. JUSTIFICACIÓN DE TEXTO (Específica para Nosotros y Doctores)
-   ========================================================================== */
-.texto-justificado p,
-.texto-justificado span,
-.doctor-info p {
-    text-align: justify;
-    hyphens: auto; /* Divide palabras largas para evitar huecos en móvil */
-}
-
-/* ==========================================================================
-   6. REDES SOCIALES, ICONOS Y MAPA
-   ========================================================================== */
-.redes {
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.icono-red {
-    text-decoration: none;
-    color: #555;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: transform 0.3s ease;
-}
-
-.icono-red:hover { transform: scale(1.1); }
-
-.fa-whatsapp { color: #25D366; font-size: 1.5rem; }
-.fa-instagram { color: #E4405F; font-size: 1.5rem; }
-.fa-facebook { color: #1877F2; font-size: 1.5rem; }
-.fa-map-marker-alt { color: #ea4335; }
-.fa-phone-alt { color: #34a853; }
-
-.mapa-interactivo {
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #eee;
-    margin-top: 20px;
-    line-height: 0;
-}
-
-/* ==========================================================================
-   7. ACORDEONES (Doctores y Servicios)
-   ========================================================================== */
-
-/* Reglas comunes para ambos */
-.doctor-header, .servicio-header {
-    cursor: pointer;
-    justify-content: center; /* Centra el texto */
-    position: relative;
     text-align: center;
+    font-weight: 700;
 }
 
-.flecha-drop {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+.subtitulo-seccion {
+    text-align: center;
+    color: #64748B;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+/* ==========================================================================
+   4. ESTRUCTURAS DE CONTENIDO (División y Cuadrículas)
+   ========================================================================== */
+.contenido-dividido-moderno {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    align-items: center;
+}
+
+.texto-limpio {
+    font-size: 1.05rem;
+    color: #334155;
+    line-height: 1.8;
+}
+
+.texto-limpio h4 {
+    color: #0F172A;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-left: 4px solid #0056b3;
+    padding-left: 10px;
+}
+
+.texto-limpio ul {
+    padding-left: 20px;
+}
+
+/* Cuadrícula para Servicios y Nosotros */
+.cuadricula-3 {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en móvil */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.tarjeta-limpia {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 4px solid #0056b3;
     transition: transform 0.3s ease;
 }
 
-/* Doctores - Estilos específicos */
-.doctor-item { margin-bottom: 15px; }
+.tarjeta-limpia:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-limpia i {
+    font-size: 2.5rem;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+.tarjeta-limpia h3 {
+    color: #0F172A;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-dividido-moderno {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .columna-mitad {
+        flex: 1;
+        width: 50%;
+    }
+    .cuadricula-3 {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en PC */
+    }
+}
+
+/* ==========================================================================
+   5. ACORDEÓN DE DOCTORES (Equipo)
+   ========================================================================== */
+.doctor-item {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.doctor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    cursor: pointer;
+    background: #ffffff;
+    border-left: 4px solid #0056b3;
+    transition: background 0.3s;
+}
+
+.doctor-header:hover {
+    background: #F8FAFC;
+}
+
+.doctor-header span {
+    flex-grow: 1;
+    margin-left: 15px;
+    font-size: 1.1rem;
+    color: #334155;
+}
+
 .doctor-info {
     max-height: 0;
     overflow: hidden;
     transition: all 0.4s ease-out;
-    background: #f9fbff;
+    background: #F8FAFC;
     opacity: 0;
+    padding: 0 20px;
 }
+
 .doctor-item.activo .doctor-info {
     max-height: 800px;
     padding: 20px;
     opacity: 1;
-    border: 2px solid #a9c1df;
-    border-top: none;
+    border-top: 1px solid #E2E8F0;
 }
 
-/* Servicios - Estilos específicos (Independientes) */
-.servicio-item { margin-bottom: 15px; }
-.servicio-info {
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.4s ease-out;
-    background: #f4faff; /* Un tono ligeramente distinto si deseas */
-    opacity: 0;
-    padding: 0 20px;
-}
-.servicio-item.activo .servicio-info {
-    max-height: 800px;
-    padding: 20px;
-    opacity: 1;
-    border: 2px solid #0056b3; /* Borde más marcado para servicios */
-    border-top: none;
+.flecha-drop {
+    transition: transform 0.3s ease;
+    color: #0056b3;
 }
 
-/* Rotación de flecha para ambos */
-.doctor-item.activo .flecha-drop, 
-.servicio-item.activo .flecha-drop {
-    transform: translateY(-50%) rotate(180deg);
+.doctor-item.activo .flecha-drop {
+    transform: rotate(180deg);
 }
 
 /* ==========================================================================
-   8. RESPONSIVE (MÓVIL)
+   6. RESPONSIVE MÓVIL (Menú sin botón hamburguesa)
    ========================================================================== */
-/* Modo Móvil (Celulares y Tablets pequeñas) */
 @media (max-width: 768px) {
-    /* 1. Mantenemos el formato apilado (Logo arriba, menú abajo) */
     .header-profesional {
         flex-direction: column !important; 
         justify-content: center;
@@ -310,115 +248,70 @@ h2 {
         padding: 10px 2%;
         gap: 8px;
     }
-    
     .logo-container {
         width: 100%;
         justify-content: center !important;
     }
-
     .logo-img {
-        height: 50px; /* Logo un poco más pequeño para ahorrar espacio */
+        height: 50px; 
     }
-
-    /* 2. Ocultamos el botón de 3 rayas para siempre */
     .menu-toggle {
         display: none !important; 
     }
-    
-    /* 3. Forzamos a que el menú siempre esté visible y en línea */
     .nav-links {
         display: flex !important; 
         position: relative !important;
         top: 0 !important;
         background-color: transparent !important;
-        flex-direction: row !important; /* Links uno al lado del otro */
-        flex-wrap: wrap !important;     /* Si no caben en una línea, bajan solos sin romper la pantalla */
-        gap: 12px !important;           /* Menos espacio entre opciones */
+        flex-direction: row !important; 
+        flex-wrap: wrap !important;     
+        gap: 12px !important;           
         box-shadow: none !important;
         justify-content: center;
     }
-    
-    /* 4. Achicamos un poco la letra y los íconos para que todo quepa */
     .nav-links a {
         padding: 5px !important;
         border-bottom: none !important;
         font-size: 0.85rem !important; 
     }
-    
     .nav-links a i {
-        font-size: 0.9rem; /* Íconos un poquito más pequeños */
+        font-size: 0.9rem;
     }
-
-    /* ... mantén el resto de tu código responsive de doctores, servicios, etc. aquí abajo ... */
 }
 
 /* ==========================================================================
-   9. ESTILOS PARA CONTENIDO DIVIDIDO (IMÁGENES EN ESPECIALIDADES)
+   7. EFECTO LIGHTBOX (IMÁGENES AMPLIABLES)
    ========================================================================== */
-.contenido-dividido {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-}
-
 .img-medica {
     width: 100%;
-    height: auto; /* Cambiamos 100% por auto para mantener la proporción real */
+    height: auto; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
-/* Solo para computadoras y tablets grandes (El texto al lado de la imagen) */
-@media (min-width: 768px) {
-    .contenido-dividido {
-        flex-direction: row;
-        align-items: flex-start; /* Cambio 1: Alineamos imagen y texto hacia ARRIBA */
-    }
-    
-    .texto-especialidad {
-        flex: 1; /* Cambio 2: El texto toma exactamente el 50% del espacio */
-        padding-right: 20px;
-    }
-    
-    .imagen-especialidad {
-        flex: 1; /* Cambio 3: La imagen toma exactamente el otro 50% del espacio */
-    }
-}
-
-/* ==========================================================================
-   10. EFECTO LIGHTBOX (MODAL DE IMÁGENES)
-   ========================================================================== */
-/* Oculto por defecto, cubre toda la pantalla cuando se activa */
 .modal-imagen {
     display: none; 
     position: fixed;
-    z-index: 4000; /* Para que quede por encima de tu menú que tiene 3000 */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro semitransparente */
-    backdrop-filter: blur(5px); /* Desenfoque elegante de fondo */
+    z-index: 4000; 
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    backdrop-filter: blur(5px); 
     overflow: auto;
 }
 
-/* La imagen ampliada */
 .modal-contenido {
     margin: auto;
     display: block;
     max-width: 90%;
-    max-height: 90vh; /* Para que no se salga de la pantalla verticalmente */
+    max-height: 90vh; 
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    animation: zoomIn 0.3s ease; /* Animación suave al abrir */
+    animation: zoomIn 0.3s ease; 
 }
 
-/* El botón de cerrar (X) */
 .cerrar-modal {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 20px; right: 40px;
     color: #f1f1f1;
     font-size: 45px;
     font-weight: bold;
@@ -426,22 +319,220 @@ h2 {
     transition: 0.3s;
 }
 
-.cerrar-modal:hover {
-    color: #aaccda; /* Tu color azul al pasar el mouse */
-}
+.cerrar-modal:hover { color: #aaccda; }
 
-/* Animación de acercamiento */
 @keyframes zoomIn {
     from {transform: scale(0.8); opacity: 0;}
     to {transform: scale(1); opacity: 1;}
 }
 
-/* Indicador visual de que la imagen original se puede hacer clic */
 .img-ampliable {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-
 .img-ampliable:hover {
-    transform: scale(1.02); /* Se acerca un poquito al pasar el mouse indicando interactividad */
+    transform: scale(1.02); 
+}
+
+/* ==========================================================================
+   8. CONTACTO Y REDES SOCIALES (FOOTER)
+   ========================================================================== */
+.contacto-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 40px;
+    border-top: 1px solid #E2E8F0; /* Una línea divisoria sutil */
+}
+
+.info-contacto h3, .redes-sociales h3 {
+    color: #0F172A;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.info-contacto p {
+    color: #334155;
+    font-size: 1.05rem;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.info-contacto i {
+    color: #0056b3;
+    font-size: 1.2rem;
+    width: 25px; /* Alinea los íconos perfectamente */
+}
+
+.iconos-redes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icono-red {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #0056b3;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.icono-red:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    transform: translateY(-5px); /* Pequeño salto al pasar el mouse */
+}
+
+/* En computadora se divide en dos columnas */
+@media (min-width: 768px) {
+    .contacto-footer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .info-contacto p {
+        justify-content: flex-start;
+    }
+}
+
+/* ==========================================================================
+   ESTILOS PARA BOTONES DE CONTACTO (Teléfono y Correo)
+   ========================================================================== */
+.enlace-contacto {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #ffffff;
+    color: #334155;
+    padding: 12px 25px;
+    border-radius: 50px; 
+    text-decoration: none; 
+    font-size: 1.05rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #E2E8F0;
+    transition: all 0.3s ease;
+    width: fit-content;
+    margin: 0; /* CAMBIO: Quitamos el "0 auto" para que no se centre forzosamente */
+}
+
+.enlace-contacto i {
+    color: #0056b3; 
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.enlace-contacto:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 15px rgba(0, 86, 179, 0.2);
+}
+
+.enlace-contacto:hover i {
+    color: #ffffff; 
+}
+
+.contenedor-botones-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* CAMBIO: Obliga a los botones a alinearse a la izquierda */
+    gap: 15px; 
+    margin-top: 15px;
+}
+/* ==========================================================================
+   ESTILOS PARA 2 SERVICIOS Y LISTAS DE TRATAMIENTOS
+   ========================================================================== */
+/* Cuadrícula de 2 columnas (para centrar y ampliar 2 tarjetas) */
+.cuadricula-2 {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en celulares */
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 900px; /* Evita que se estiren demasiado en pantallas gigantes */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* En PC se dividen en 2 columnas iguales */
+@media (min-width: 768px) {
+    .cuadricula-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Estilo elegante para las listas dentro de las tarjetas */
+.lista-tratamientos {
+    text-align: left;
+    margin: 0;
+    padding-left: 20px;
+    color: #334155;
+}
+
+.lista-tratamientos li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    position: relative;
+    list-style-type: disc; /* Viñetas clásicas */
+}
+
+.lista-tratamientos li::marker {
+    color: #0056b3; /* Pone las viñetas del mismo azul de la clínica */
+}
+
+/* ==========================================================================
+   ESTILOS PARA ACORDEÓN DE SERVICIOS (TARJETAS DESPLEGABLES)
+   ========================================================================== */
+.servicio-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.servicio-header {
+    transition: opacity 0.3s;
+}
+
+.servicio-header:hover {
+    opacity: 0.8; /* Efecto sutil al pasar el mouse indicando que es clickeable */
+}
+
+/* El contenedor de la lista empieza invisible y sin altura */
+.servicio-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+    opacity: 0;
+}
+
+/* Cuando se le da clic (el JS le agrega la clase 'activo' al servicio-item) */
+.servicio-item.activo .servicio-info {
+    max-height: 500px; /* Suficiente espacio para la lista */
+    opacity: 1;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #E2E8F0; /* Agrega una línea divisoria elegante */
+}
+
+/* Animación de la flechita */
+.servicio-header .flecha-drop {
+    transition: transform 0.3s ease;
+}
+
+.servicio-item.activo .servicio-header .flecha-drop {
+    transform: rotate(180deg); /* La flecha gira hacia arriba al abrir */
 }

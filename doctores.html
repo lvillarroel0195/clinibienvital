@@ -10,56 +10,76 @@
 </head>
 <body>
     <header class="header-profesional">
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="banner2sb.png" alt="CliniBienvital" class="logo-img">
-            </a>
+        <div class="contenedor-ancho" style="text-align: center;">
+            <img src="banner2sb.png" alt="Salud Integral" style="max-width: 65%; height: auto;">
         </div>
-        <button class="menu-toggle" id="btnMenuProfesional">
-            <i class="fas fa-bars"></i>
-        </button>
         <nav class="nav-links" id="navLinks">
             <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
             <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
             <a href="especialidades.html"><i class="fas fa-stethoscope"></i> Especialidades</a>
             <a href="doctores.html"><i class="fas fa-user-md"></i> Equipo</a>
         </nav>
-    </header> 
+        
+    </header>
 
-    <section>
-        <h2>Nuestro Equipo Médico</h2>
-        <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">
-            Haz clic en un profesional para ver su trayectoria
-        </p>
+    <section class="seccion-clinica fondo-gris-suave">
+        <div class="contenedor-ancho">
+            <h2 class="titulo-seccion">Nuestro Equipo Médico</h2>
+            <p class="subtitulo-seccion">Profesionales altamente capacitados y comprometidos con tu recuperación.</p>
 
-        <div class="contenedor-botones">
-            <div class="doctor-item">
-                <div class="boton-accion doctor-header">
-                    <i class="fas fa-user-md" style="color: #0056b3; font-size: 1.5rem;"></i>
-                    <span>
-                        <strong>Lic. Pedro Valdés Cano</strong><br>
-                        Rehabilitador Físico
-                    </span>
-                    <i class="fas fa-chevron-down flecha-drop"></i>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="doctor-item">
+                    <div class="doctor-header">
+                        <i class="fas fa-user-md" style="color: #0056b3; font-size: 1.5rem;"></i>
+                        <span>
+                            <strong>Dr. Héctor Manuel Cutiño Sánchez</strong><br>
+                            Especialista en Rehabilitación y Medicina Deportiva
+                        </span>
+                        <i class="fas fa-chevron-down flecha-drop"></i>
+                    </div>
+                    <div class="doctor-info texto-limpio">
+                        <p>Nuestro especialista en rehabilitación se graduó como especialista de medicina deportiva en el instituto superior de cultura física de la Habana en 1982, convalidado en Chile el año 1997 a través de la Universidad de Chile.</p>
+                        <p>Realizó trabajos en Cuba como especialista rehabilitador en el CIREN (Centro internacional de restauración neurológica). En Chile formó su propio centro de rehabilitación llamado SERVIREP con una duración de más de 20 años.</p>
+                    </div>
                 </div>
-                <div class="doctor-info texto-justificado">
-                    <p>Nuestro rehabilitador físico es Cubano, licenciado en rehabilitación física y cultura física del instituto superior de cultura física de la Habana en 1982, convalidado en Chile el año 1997 a través de la Universidad de Chile.</p>
-                    <p>Realizó trabajos en Cuba como especialista rehabilitador en el CIREN (Centro internacional de restauración neurológica). En Chile formó su propio centro de rehabilitación llamado SERVIREP con una duración de más de 20 años.</p>
+
+                <div class="doctor-item">
+                    <div class="doctor-header">
+                        <i class="fas fa-user-md" style="color: #0056b3; font-size: 1.5rem;"></i>
+                        <span>
+                            <strong>Dr. Manuel Díaz Díaz</strong><br>
+                            Traumatología y Ortopedia
+                        </span>
+                        <i class="fas fa-chevron-down flecha-drop"></i>
+                    </div>
+                    <div class="doctor-info texto-limpio">
+                        <p>Nuestro doctor es graduado como Doctor en Medicina en el Instituto Superior de Ciencias Médicas de la Habana en 1977. En 1978 realiza su especialización en traumatología y ortopedia en la Universidad de la Habana.</p>
+                        <p>Realizó trabajos como profesor en la universidad de Uganda y de España. En Chile es homologado como médico especialista en la Universidad de Chile.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="doctor-item">
-                <div class="boton-accion doctor-header">
-                    <i class="fas fa-user-md" style="color: #0056b3; font-size: 1.5rem;"></i>
-                    <span>
-                        <strong>Dr. Manuel Díaz Díaz</strong><br>
-                        Traumatología y Ortopedia
-                    </span>
-                    <i class="fas fa-chevron-down flecha-drop"></i>
+        </div>
+        <div class="contacto-footer">
+            <div class="info-contacto">
+                <h3>Atención al Paciente</h3>
+                <div class="contenedor-botones-contacto">
+                    <a href="tel:+56998377622" class="enlace-contacto">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+56 9 9837 7622</span>
+                    </a>
+                        
+                    <a href="mailto:clinibienvital@gmail.com" class="enlace-contacto">
+                        <i class="fas fa-envelope"></i>
+                        <span>clinibienvital@gmail.com</span>
+                    </a>
                 </div>
-                <div class="doctor-info texto-justificado">
-                    <p>Nuestro doctor es graduado como Doctor en Medicina en el Instituto Superior de Ciencias Médicas de la Habana en 1977. En 1978 realiza su especialización en traumatología y ortopedia en la Universidad de la Habana.</p>
-                    <p>Realizó trabajos como profesor en la universidad de Uganda y de España. En Chile es homologado como médico especialista en la Universidad de Chile.</p>
+            </div>
+            <div class="redes-sociales">
+                <h3>Síguenos</h3>
+                <div class="iconos-redes">
+                    <a href="https://www.facebook.com/profile.php?id=61587765522355" class="icono-red" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/clinibienvital" class="icono-red" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/56998377622" class="icono-red" target="_blank" title="Escríbenos por WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>

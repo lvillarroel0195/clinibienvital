@@ -10,92 +10,105 @@
 </head>
 <body>
     <header class="header-profesional">
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="banner2sb.png" alt="CliniBienvital" class="logo-img">
-            </a>
+        <div class="contenedor-ancho" style="text-align: center;">
+            <img src="banner2sb.png" alt="Salud Integral" style="max-width: 65%; height: auto;">
         </div>
-        <button class="menu-toggle" id="btnMenuProfesional">
-            <i class="fas fa-bars"></i>
-        </button>
         <nav class="nav-links" id="navLinks">
             <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
             <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
             <a href="especialidades.html"><i class="fas fa-stethoscope"></i> Especialidades</a>
             <a href="doctores.html"><i class="fas fa-user-md"></i> Equipo</a>
         </nav>
-    </header>  
+        
+    </header>
 
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">
-            Haz clic en una categoría para ver el detalle de nuestras prestaciones
-        </p>
-
-        <div class="contenedor-botones">
-            <div class="servicio-item"> <div class="boton-accion servicio-header"> <span><strong>Traumatología Especializada</strong></span>
-                    <i class="fas fa-chevron-down flecha-drop"></i>
+    <section class="seccion-clinica fondo-gris-suave">
+        <div class="contenedor-ancho">
+            <h2 class="titulo-seccion">Nuestros Servicios</h2>
+            <p class="subtitulo-seccion">Atención médica integral enfocada en tu recuperación y bienestar continuo.</p>
+            
+            <div class="cuadricula-2">
+                
+                <div class="tarjeta-limpia servicio-item">
+                    <div class="servicio-header" style="cursor: pointer;">
+                        <i class="fas fa-user-md"></i>
+                        <h3>Traumatología Especializada</h3>
+                        <p class="texto-limpio" style="font-size: 0.95rem; margin-bottom: 10px;">Atención primaria integral y derivación oportuna para el cuidado de tu salud integral.</p>
+                        <div style="color: #0056b3; font-weight: 600; margin-top: 15px;">
+                            Ver tratamientos <i class="fas fa-chevron-down flecha-drop" style="margin-left: 5px;"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="servicio-info">
+                        <ul class="lista-tratamientos">
+                            <li>Consulta Médica</li>
+                            <li>Infiltraciones</li>
+                            <li>Fisioterapia</li>
+                            <li>Ozonoterapia</li>
+                            <li>Rehabilitación de Secuelas Motoras</li>
+                            <li>Rehabilitación de Trastornos del Movimiento</li>
+                        </ul>
+                    </div>
                 </div>
-                    <div class="servicio-info texto-justificado"> <ul>
-                        <li>Consulta Médica</li>
-                        <li>Infiltraciones</li>
-                        <li>Fisioterapia</li>
-                        <li>Ozonoterapia</li>
-                        <li>Rehabilitación de Secuelas Motoras</li>
-                        <li>Rehabilitación de Trastornos del Movimiento</li>
-                    </ul>
+
+                <div class="tarjeta-limpia servicio-item">
+                    <div class="servicio-header" style="cursor: pointer;">
+                        <i class="fas fa-x-ray"></i>
+                        <h3>Medicina Estética y Bienestar</h3>
+                        <p class="texto-limpio" style="font-size: 0.95rem; margin-bottom: 10px;">Especialistas en el diagnóstico y tratamiento de lesiones óseas, articulares y musculares.</p>
+                        <div style="color: #0056b3; font-weight: 600; margin-top: 15px;">
+                            Ver tratamientos <i class="fas fa-chevron-down flecha-drop" style="margin-left: 5px;"></i>
+                        </div>
+                    </div>
+
+                    <div class="servicio-info">
+                        <ul class="lista-tratamientos">
+                            <li>Ozonoterapia Tópica</li>
+                            <li>Laserterapia</li>
+                            <li>Alta Frecuencia</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion-clinica fondo-blanco">
+        <div class="contenedor-ancho">
+            <h2 class="titulo-seccion">Nuestra Ubicación</h2>
+            <p class="subtitulo-seccion"><i class="fas fa-map-marker-alt" style="color: #0056b3;"></i> Av. Echeñique 5037, Ñuñoa, Santiago</p>
+            
+            <div style="width: 100%; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.23961168939!2d-70.58316142511413!3d-33.4430750971295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf05d93bc8eb%3A0xe552bb7721869e5d!2sEche%C3%B1ique%205037%2C%207770178%20%C3%91u%C3%B1oa%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1714078512406!5m2!1ses-419!2scl" width="100%" height="400" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="contacto-footer">
+            <div class="info-contacto">
+                <h3>Atención al Paciente</h3>
+                <div class="contenedor-botones-contacto">
+                    <a href="tel:+56998377622" class="enlace-contacto">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+56 9 9837 7622</span>
+                    </a>
+                        
+                    <a href="mailto:clinibienvital@gmail.com" class="enlace-contacto">
+                        <i class="fas fa-envelope"></i>
+                        <span>clinibienvital@gmail.com</span>
+                    </a>
                 </div>
             </div>
-
-            <div class="servicio-item"> <div class="boton-accion servicio-header"> <span><strong>Medicina Estética y Bienestar</strong></span>
-                    <i class="fas fa-chevron-down flecha-drop"></i>
-                </div>
-                <div class="servicio-info texto-justificado"> <ul>
-                        <li>Ozonoterapia Tópica</li>
-                        <li>Laserterapia</li>
-                        <li>Alta Frecuencia</li>
-                    </ul>
+            <div class="redes-sociales">
+                <h3>Síguenos</h3>
+                <div class="iconos-redes">
+                    <a href="https://www.facebook.com/profile.php?id=61587765522355" class="icono-red" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/clinibienvital" class="icono-red" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/56998377622" class="icono-red" target="_blank" title="Escríbenos por WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto y Redes Sociales</h2>
-        <div class="contenedor-botones">
-            <a href="tel:+56998377622" class="boton-accion">
-                <i class="fas fa-phone-alt"></i>
-                <span> Llama ahora: +569 98377622</span>
-            </a>
-            <a href="https://maps.google.com/?q=Av.+Echenique+5037,+Nunoa,+Santiago" 
-            target="_blank" 
-            class="boton-accion">
-                <i class="fas fa-map-marker-alt"></i>
-                <span> Dirección: Av. Echeñique 5037, Ñuñoa, Santiago</span>
-            </a>
-        </div>
-
-        <div class="mapa-interactivo">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.1012453485964!2d-70.58078502430924!3d-33.44666867339115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfb244029f35%3A0xd57b6a54ab14d6fb!2sAv.%20Eche%C3%B1ique%205037%2C%207790481%20%C3%91u%C3%B1oa%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1771465845067!5m2!1ses!2scl"
-                width="100%" 
-                height="300"
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
-        <div class="redes">
-            <a href="https://wa.me/56998377622" target="_blank" rel="noopener" class="icono-red">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="https://instagram.com/clinibienvital" target="_blank" rel="noopener" class="icono-red">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61587765522355" target="_blank" rel="noopener" class="icono-red">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>
-        </div>
-    </section>
     <script src="script.js"></script>
 </body>
 </html>

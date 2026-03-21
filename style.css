@@ -301,45 +301,52 @@ h2 {
    ========================================================================== */
 /* Modo Móvil (Celulares y Tablets pequeñas) */
 @media (max-width: 768px) {
+    /* 1. Mantenemos el formato apilado (Logo arriba, menú abajo) */
     .header-profesional {
-        flex-direction: row; /* Vuelve a poner logo y botón en la misma línea */
-        justify-content: space-between;
-        height: 80px;
-        padding: 10px 5%;
+        flex-direction: column !important; 
+        justify-content: center;
+        height: auto;
+        padding: 10px 2%;
+        gap: 8px;
     }
     
     .logo-container {
-        width: auto;
-        justify-content: flex-start;
+        width: 100%;
+        justify-content: center !important;
     }
 
     .logo-img {
-        height: 50px; /* Se achica un poco en celular para que quepa bien */
+        height: 50px; /* Logo un poco más pequeño para ahorrar espacio */
     }
 
+    /* 2. Ocultamos el botón de 3 rayas para siempre */
     .menu-toggle {
-        display: block; /* Muestra el botón de 3 rayitas */
+        display: none !important; 
     }
     
+    /* 3. Forzamos a que el menú siempre esté visible y en línea */
     .nav-links {
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #ffffff;
-        flex-direction: column;
-        gap: 0;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-        display: none; /* Menú oculto por defecto en celular */
+        display: flex !important; 
+        position: relative !important;
+        top: 0 !important;
+        background-color: transparent !important;
+        flex-direction: row !important; /* Links uno al lado del otro */
+        flex-wrap: wrap !important;     /* Si no caben en una línea, bajan solos sin romper la pantalla */
+        gap: 12px !important;           /* Menos espacio entre opciones */
+        box-shadow: none !important;
+        justify-content: center;
     }
     
-    .nav-links.mostrar {
-        display: flex; /* Se muestra al hacer clic */
-    }
-    
+    /* 4. Achicamos un poco la letra y los íconos para que todo quepa */
     .nav-links a {
-        padding: 20px;
-        border-bottom: 1px solid #f0f0f0;
-        justify-content: center; /* Centra el texto en el menú desplegable móvil */
+        padding: 5px !important;
+        border-bottom: none !important;
+        font-size: 0.85rem !important; 
     }
+    
+    .nav-links a i {
+        font-size: 0.9rem; /* Íconos un poquito más pequeños */
+    }
+
+    /* ... mantén el resto de tu código responsive de doctores, servicios, etc. aquí abajo ... */
 }

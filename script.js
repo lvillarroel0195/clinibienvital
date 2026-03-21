@@ -29,3 +29,35 @@ function configurarAcordeon(claseHeader) {
 // Inicializamos Doctores y Servicios por separado
 configurarAcordeon('.doctor-header');
 configurarAcordeon('.servicio-header');
+
+// ==========================================================================
+// 3. LÓGICA DEL MODAL DE IMÁGENES (LIGHTBOX)
+// ==========================================================================
+const modalImagen = document.getElementById('modalImagen');
+const imgAmpliacion = document.getElementById('imgAmpliacion');
+const cerrarModal = document.getElementById('cerrarModal');
+const imagenesAmpliables = document.querySelectorAll('.img-ampliable');
+
+if (modalImagen && imgAmpliacion && cerrarModal) {
+    // Al hacer clic en cualquier imagen ampliable...
+    imagenesAmpliables.forEach(img => {
+        img.addEventListener('click', function() {
+            modalImagen.style.display = "flex"; 
+            modalImagen.style.justifyContent = "center";
+            modalImagen.style.alignItems = "center";
+            imgAmpliacion.src = this.src; // Copia la ruta de la imagen original al modal
+        });
+    });
+
+    // Cerrar al hacer clic en la X
+    cerrarModal.addEventListener('click', () => {
+        modalImagen.style.display = "none";
+    });
+
+    // Cerrar si el usuario hace clic fuera de la imagen (en el fondo oscuro)
+    modalImagen.addEventListener('click', (e) => {
+        if (e.target === modalImagen) {
+            modalImagen.style.display = "none";
+        }
+    });
+}

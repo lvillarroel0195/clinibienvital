@@ -9,104 +9,225 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contenedor-ancho" style="text-align: center;">
-            <img src="banner2sb.png" alt="Salud Integral" style="max-width: 65%; height: auto;">
+    <header class="header-profesional">
+        <div class="contenedor-ancho header-inner">
+            <a href="index.html" class="brand-lockup" aria-label="CliniBienVital inicio">
+                <img src="CentroMedico.png" alt="CliniBienVital" class="logo-img">
+                <div class="brand-copy">
+                    <span class="brand-kicker">CliniBienVital</span>
+                    <span class="brand-text">Atencion integral, rehabilitacion y bienestar</span>
+                </div>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="is-active"><i class="fas fa-home"></i> Inicio</a>
+                <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+                <a href="especialidades.html"><i class="fas fa-stethoscope"></i> Especialidades</a>
+                <a href="doctores.html"><i class="fas fa-user-md"></i> Equipo</a>
+            </nav>
         </div>
-    <header class="header-profesional"> 
-        <nav class="nav-links" id="navLinks">
-            <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
-            <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
-            <a href="especialidades.html"><i class="fas fa-stethoscope"></i> Especialidades</a>
-            <a href="doctores.html"><i class="fas fa-user-md"></i> Equipo</a>
-        </nav>
     </header>
 
-    <section class="seccion-clinica fondo-gris-suave">
-        <div class="contenedor-ancho">
-            <h2 class="titulo-seccion">Nuestros Servicios</h2>
-            <p class="subtitulo-seccion">Atención médica integral enfocada en tu recuperación y bienestar continuo.</p>
-            
-            <div class="cuadricula-2">
-                
-                <div class="tarjeta-limpia servicio-item">
-                    <div class="servicio-header" style="cursor: pointer;">
-                        <i class="fas fa-x-ray"></i>
-                        <h3>Traumatología Especializada</h3>
-                        <p class="texto-limpio" style="font-size: 0.95rem; margin-bottom: 10px;">Atención primaria integral y derivación oportuna para el cuidado de tu salud integral.</p>
-                        <div style="color: #0056b3; font-weight: 600; margin-top: 15px;">
-                            Ver tratamientos <i class="fas fa-chevron-down flecha-drop" style="margin-left: 5px;"></i>
+    <main>
+        <section class="hero-premium">
+            <div class="contenedor-ancho hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Cuidado medico con enfoque humano</p>
+                    <h2>Atencion integral para tu recuperacion, movilidad y bienestar continuo.</h2>
+                    <p class="hero-text">
+                        En CliniBienVital reunimos traumatologia, rehabilitacion y terapias complementarias en un entorno profesional,
+                        cercano y pensado para acompanarte en cada etapa de tu tratamiento.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/56998377622" class="btn-primario js-whatsapp-trigger" data-whatsapp-message="Hola, quiero reservar una atencion en CliniBienVital.">Reservar por WhatsApp</a>
+                        <a href="tel:+56998377622" class="btn-secundario">Llamar ahora</a>
+                    </div>
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <strong>Atencion personalizada</strong>
+                            <span>Evaluaciones y tratamientos acordes a cada paciente.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Equipo especializado</strong>
+                            <span>Experiencia en dolor, rehabilitacion y funcionalidad.</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Ubicacion accesible</strong>
+                            <span>Ñuñoa, Santiago, con vias rapidas de acceso.</span>
                         </div>
                     </div>
-                    
-                    <div class="servicio-info">
-                        <ul class="lista-tratamientos">
-                            <li>Consulta Médica</li>
-                            <li>Infiltraciones</li>
-                            <li>Fisioterapia</li>
-                            <li>Ozonoterapia</li>
-                            <li>Rehabilitación de Secuelas Motoras</li>
-                            <li>Rehabilitación de Trastornos del Movimiento</li>
-                        </ul>
-                    </div>
                 </div>
 
-                <div class="tarjeta-limpia servicio-item">
-                    <div class="servicio-header" style="cursor: pointer;">
-                        <i class="fas fa-user-md"></i>
-                        <h3>Medicina Estética y Bienestar</h3>
-                        <p class="texto-limpio" style="font-size: 0.95rem; margin-bottom: 10px;">Especialistas en el diagnóstico y tratamiento de lesiones óseas, articulares y musculares.</p>
-                        <div style="color: #0056b3; font-weight: 600; margin-top: 15px;">
-                            Ver tratamientos <i class="fas fa-chevron-down flecha-drop" style="margin-left: 5px;"></i>
+                <div class="hero-visual">
+                    <div class="hero-banner-card">
+                        <img src="banner2sb.png" alt="Salud integral CliniBienVital" class="hero-banner">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="hero-floating-card">
+                        <span class="floating-label">Agenda y orientacion</span>
+                        <strong>+56 9 9837 7622</strong>
+                        <p>Resolvemos dudas, coordinamos atencion y te guiamos en el proceso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-clinica fondo-blanco">
+            <div class="contenedor-ancho">
+                <h2 class="titulo-seccion">Por que elegirnos</h2>
+                <p class="subtitulo-seccion">Una propuesta de salud integral con criterios clinicos, acompanamiento cercano y foco en resultados funcionales.</p>
+
+                <div class="cuadricula-3">
+                    <article class="tarjeta-limpia">
+                        <i class="fas fa-user-doctor"></i>
+                        <h3>Enfoque profesional</h3>
+                        <p class="texto-limpio">Atencion orientada por especialistas con experiencia en dolor, rehabilitacion y recuperacion funcional.</p>
+                    </article>
+                    <article class="tarjeta-limpia">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Trato cercano</h3>
+                        <p class="texto-limpio">Priorizamos el acompanamiento, la escucha y la seguridad en cada etapa del proceso terapeutico.</p>
+                    </article>
+                    <article class="tarjeta-limpia">
+                        <i class="fas fa-shield-heart"></i>
+                        <h3>Bienestar continuo</h3>
+                        <p class="texto-limpio">No solo tratamos sintomas: buscamos mejorar movilidad, calidad de vida y autonomia del paciente.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-clinica fondo-gris-suave">
+            <div class="contenedor-ancho">
+                <div class="section-heading-with-link">
+                    <div>
+                        <p class="eyebrow eyebrow-soft">Servicios principales</p>
+                        <h2 class="titulo-seccion titulo-seccion-left">Nuestros Servicios</h2>
+                    </div>
+                    <a href="especialidades.html" class="section-link">Ver detalle completo</a>
+                </div>
+                <p class="subtitulo-seccion subtitulo-left">Atencion medica integral enfocada en tu recuperacion, alivio del dolor y bienestar sostenido.</p>
+
+                <div class="cuadricula-2">
+                    <div class="tarjeta-limpia servicio-item">
+                        <div class="servicio-header">
+                            <i class="fas fa-x-ray"></i>
+                            <h3>Traumatologia Especializada</h3>
+                            <p class="texto-limpio service-summary">Evaluacion, control y tratamientos orientados a lesiones oseas, articulares, musculares y dolor cronico.</p>
+                            <div class="service-toggle">
+                                Ver tratamientos <i class="fas fa-chevron-down flecha-drop"></i>
+                            </div>
+                        </div>
+                        <div class="servicio-info">
+                            <ul class="lista-tratamientos">
+                                <li>Consulta medica</li>
+                                <li>Infiltraciones</li>
+                                <li>Fisioterapia</li>
+                                <li>Ozonoterapia</li>
+                                <li>Rehabilitacion de secuelas motoras</li>
+                                <li>Rehabilitacion de trastornos del movimiento</li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div class="servicio-info">
-                        <ul class="lista-tratamientos">
-                            <li>Ozonoterapia Tópica</li>
-                            <li>Laserterapia</li>
-                            <li>Alta Frecuencia</li>
-                        </ul>
+                    <div class="tarjeta-limpia servicio-item">
+                        <div class="servicio-header">
+                            <i class="fas fa-spa"></i>
+                            <h3>Medicina Estetica y Bienestar</h3>
+                            <p class="texto-limpio service-summary">Terapias complementarias para el cuidado continuo, la recuperacion de tejidos y el bienestar general.</p>
+                            <div class="service-toggle">
+                                Ver tratamientos <i class="fas fa-chevron-down flecha-drop"></i>
+                            </div>
+                        </div>
+                        <div class="servicio-info">
+                            <ul class="lista-tratamientos">
+                                <li>Ozonoterapia topica</li>
+                                <li>Laserterapia</li>
+                                <li>Alta frecuencia</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="seccion-clinica fondo-blanco">
-        <div class="contenedor-ancho">
-            <h2 class="titulo-seccion">Nuestra Ubicación</h2>
-            <p class="subtitulo-seccion"><i class="fas fa-map-marker-alt" style="color: #0056b3;"></i> Av. Echeñique 5037, Ñuñoa, Santiago</p>
-            
-            <div style="width: 100%; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.23961168939!2d-70.58316142511413!3d-33.4430750971295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf05d93bc8eb%3A0xe552bb7721869e5d!2sEche%C3%B1ique%205037%2C%207770178%20%C3%91u%C3%B1oa%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1714078512406!5m2!1ses-419!2scl" width="100%" height="400" style="border:0; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-        <div class="contacto-footer">
-            <div class="info-contacto">
-                <h3>Atención al Paciente</h3>
-                <div class="contenedor-botones-contacto">
-                    <a href="tel:+56998377622" class="enlace-contacto">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>+56 9 9837 7622</span>
-                    </a>
-                        
-                    <a href="mailto:clinibienvital@gmail.com" class="enlace-contacto">
-                        <i class="fas fa-envelope"></i>
-                        <span>clinibienvital@gmail.com</span>
-                    </a>
+        <section class="seccion-clinica fondo-blanco">
+            <div class="contenedor-ancho cta-band">
+                <div>
+                    <p class="eyebrow">Coordinemos tu atencion</p>
+                    <h2 class="titulo-seccion titulo-seccion-left">Agenda una evaluacion y recibe orientacion personalizada.</h2>
+                    <p class="cta-text">Puedes contactarnos por telefono, correo o WhatsApp para resolver dudas y encontrar el tratamiento mas adecuado.</p>
+                </div>
+                <div class="cta-band-actions">
+                    <a href="https://wa.me/56998377622" class="btn-primario js-whatsapp-trigger" data-whatsapp-message="Hola, quiero recibir orientacion para agendar una evaluacion en CliniBienVital.">Escribir por WhatsApp</a>
+                    <a href="mailto:clinibienvital@gmail.com" class="btn-secundario">Enviar correo</a>
                 </div>
             </div>
-            <div class="redes-sociales">
-                <h3>Síguenos</h3>
+        </section>
+
+        <section class="seccion-clinica fondo-gris-suave">
+            <div class="contenedor-ancho">
+                <h2 class="titulo-seccion">Nuestra Ubicacion</h2>
+                <p class="subtitulo-seccion">Av. Echenique 5037, Nunoa, Santiago. Un punto de atencion cercano y facil de ubicar.</p>
+
+                <div class="mapa-contenedor">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.23961168939!2d-70.58316142511413!3d-33.4430750971295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf05d93bc8eb%3A0xe552bb7721869e5d!2sEche%C3%B1ique%205037%2C%207770178%20%C3%91u%C3%B1oa%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1714078512406!5m2!1ses-419!2scl" width="100%" height="400" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="contenedor-ancho footer-grid">
+            <div class="footer-brand">
+                <h3>CliniBienVital</h3>
+                <p>Centro orientado a la atencion integral, la rehabilitacion funcional y el bienestar de cada paciente.</p>
+            </div>
+            <div class="footer-block">
+                <h4>Contacto</h4>
+                <a href="tel:+56998377622" class="footer-link"><i class="fas fa-phone-alt"></i> +56 9 9837 7622</a>
+                <a href="mailto:clinibienvital@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> clinibienvital@gmail.com</a>
+                <p class="footer-text"><i class="fas fa-location-dot"></i> Av. Echenique 5037, Nunoa, Santiago</p>
+            </div>
+            <div class="footer-block">
+                <h4>Acceso rapido</h4>
+                <a href="nosotros.html" class="footer-link">Nosotros</a>
+                <a href="especialidades.html" class="footer-link">Especialidades</a>
+                <a href="doctores.html" class="footer-link">Equipo medico</a>
+            </div>
+            <div class="footer-block">
+                <h4>Siguenos</h4>
                 <div class="iconos-redes">
                     <a href="https://www.facebook.com/profile.php?id=61587765522355" class="icono-red" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/clinibienvital" class="icono-red" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/56998377622" class="icono-red" target="_blank" title="Escríbenos por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/56998377622" class="icono-red js-whatsapp-trigger" title="Escribenos por WhatsApp" data-whatsapp-message="Hola, quisiera comunicarme con CliniBienVital por WhatsApp."><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <a href="https://wa.me/56998377622" class="whatsapp-float js-whatsapp-trigger" aria-label="Contactar por WhatsApp" data-whatsapp-message="Hola, quiero comunicarme con CliniBienVital.">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div id="whatsappModal" class="whatsapp-modal" aria-hidden="true">
+        <div class="whatsapp-modal-card" role="dialog" aria-modal="true" aria-labelledby="whatsappModalTitle">
+            <button type="button" class="whatsapp-modal-close" id="cerrarWhatsappModal" aria-label="Cerrar panel de WhatsApp">&times;</button>
+            <div class="whatsapp-modal-header">
+                <span class="whatsapp-badge"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+                <h3 id="whatsappModalTitle">Conversemos por WhatsApp</h3>
+                <p>Te responderemos a la brevedad para orientarte y ayudarte a coordinar tu atencion.</p>
+            </div>
+            <div class="whatsapp-preview">
+                <div class="whatsapp-preview-label">Mensaje sugerido</div>
+                <p id="whatsappPreviewText">Hola, quiero comunicarme con CliniBienVital.</p>
+            </div>
+            <div class="whatsapp-modal-actions">
+                <a href="https://wa.me/56998377622" id="whatsappContinueLink" class="btn-primario">Continuar a WhatsApp</a>
+                <button type="button" class="btn-secundario whatsapp-cancel" id="cancelarWhatsappModal">Seguir navegando</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

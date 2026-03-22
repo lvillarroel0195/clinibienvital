@@ -9,80 +9,135 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contenedor-ancho" style="text-align: center;">
-            <img src="banner2sb.png" alt="Salud Integral" style="max-width: 65%; height: auto;">
+    <header class="header-profesional">
+        <div class="contenedor-ancho header-inner">
+            <a href="index.html" class="brand-lockup" aria-label="CliniBienVital inicio">
+                <img src="CentroMedico.png" alt="CliniBienVital" class="logo-img">
+                <div class="brand-copy">
+                    <span class="brand-kicker">CliniBienVital</span>
+                    <span class="brand-text">Atencion integral, rehabilitacion y bienestar</span>
+                </div>
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
+                <a href="especialidades.html"><i class="fas fa-stethoscope"></i> Especialidades</a>
+                <a href="doctores.html" class="is-active"><i class="fas fa-user-md"></i> Equipo</a>
+            </nav>
         </div>
-    <header class="header-profesional"> 
-        <nav class="nav-links" id="navLinks">
-            <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
-            <a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
-            <a href="especialidades.html"><i class="fas fa-stethoscope"></i> Especialidades</a>
-            <a href="doctores.html"><i class="fas fa-user-md"></i> Equipo</a>
-        </nav>
     </header>
 
-    <section class="seccion-clinica fondo-gris-suave">
-        <div class="contenedor-ancho">
-            <h2 class="titulo-seccion">Nuestro Equipo Médico</h2>
-            <p class="subtitulo-seccion">Profesionales altamente capacitados y comprometidos con tu recuperación.</p>
+    <main>
+        <section class="page-hero">
+            <div class="contenedor-ancho page-hero-inner">
+                <p class="eyebrow">Equipo medico</p>
+                <h1>Profesionales comprometidos con una atencion segura, cercana y especializada.</h1>
+                <p class="page-hero-text">Nuestro equipo combina experiencia clinica, acompanamiento humano y foco en la recuperacion funcional de cada paciente.</p>
+            </div>
+        </section>
 
-            <div style="max-width: 800px; margin: 0 auto;">
-                <div class="doctor-item">
-                    <div class="doctor-header">
-                        <i class="fas fa-user-md" style="color: #0056b3; font-size: 1.5rem;"></i>
-                        <span>
-                            <strong>Lic. Pedro Valdes Cano</strong><br>
-                            Especialista en Rehabilitación y Medicina Deportiva
-                        </span>
-                        <i class="fas fa-chevron-down flecha-drop"></i>
+        <section class="seccion-clinica fondo-gris-suave">
+            <div class="contenedor-ancho">
+                <div class="doctor-list">
+                    <div class="doctor-item">
+                        <div class="doctor-header">
+                            <i class="fas fa-user-doctor doctor-icon"></i>
+                            <span>
+                                <strong>Lic. Pedro Valdes Cano</strong><br>
+                                Especialista en Rehabilitacion y Medicina Deportiva
+                            </span>
+                            <i class="fas fa-chevron-down flecha-drop"></i>
+                        </div>
+                        <div class="doctor-info texto-limpio">
+                            <p>Nuestro especialista en rehabilitacion se graduo como especialista de medicina deportiva en el Instituto Superior de Cultura Fisica de La Habana en 1982, convalidado en Chile en 1997 a traves de la Universidad de Chile.</p>
+                            <p>Realizo trabajos en Cuba como especialista rehabilitador en el CIREN, Centro Internacional de Restauracion Neurologica. En Chile formo su propio centro de rehabilitacion llamado SERVIREP, con una trayectoria de mas de 20 anos.</p>
+                        </div>
                     </div>
-                    <div class="doctor-info texto-limpio">
-                        <p>Nuestro especialista en rehabilitación se graduó como especialista de medicina deportiva en el instituto superior de cultura física de la Habana en 1982, convalidado en Chile el año 1997 a través de la Universidad de Chile.</p>
-                        <p>Realizó trabajos en Cuba como especialista rehabilitador en el CIREN (Centro internacional de restauración neurológica). En Chile formó su propio centro de rehabilitación llamado SERVIREP con una duración de más de 20 años.</p>
-                    </div>
-                </div>
 
-                <div class="doctor-item">
-                    <div class="doctor-header">
-                        <i class="fas fa-user-md" style="color: #0056b3; font-size: 1.5rem;"></i>
-                        <span>
-                            <strong>Dr. Manuel Díaz Díaz</strong><br>
-                            Traumatología y Ortopedia
-                        </span>
-                        <i class="fas fa-chevron-down flecha-drop"></i>
-                    </div>
-                    <div class="doctor-info texto-limpio">
-                        <p>Nuestro doctor es graduado como Doctor en Medicina en el Instituto Superior de Ciencias Médicas de la Habana en 1977. En 1978 realiza su especialización en traumatología y ortopedia en la Universidad de la Habana.</p>
-                        <p>Realizó trabajos como profesor en la universidad de Uganda y de España. En Chile es homologado como médico especialista en la Universidad de Chile.</p>
+                    <div class="doctor-item">
+                        <div class="doctor-header">
+                            <i class="fas fa-user-doctor doctor-icon"></i>
+                            <span>
+                                <strong>Dr. Manuel Diaz Diaz</strong><br>
+                                Traumatologia y Ortopedia
+                            </span>
+                            <i class="fas fa-chevron-down flecha-drop"></i>
+                        </div>
+                        <div class="doctor-info texto-limpio">
+                            <p>Nuestro doctor es graduado como Doctor en Medicina en el Instituto Superior de Ciencias Medicas de La Habana en 1977. En 1978 realizo su especializacion en traumatologia y ortopedia en la Universidad de La Habana.</p>
+                            <p>Ha desarrollado labores academicas y profesionales en distintos paises. En Chile fue homologado como medico especialista en la Universidad de Chile.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="contacto-footer">
-            <div class="info-contacto">
-                <h3>Atención al Paciente</h3>
-                <div class="contenedor-botones-contacto">
-                    <a href="tel:+56998377622" class="enlace-contacto">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>+56 9 9837 7622</span>
-                    </a>
-                        
-                    <a href="mailto:clinibienvital@gmail.com" class="enlace-contacto">
-                        <i class="fas fa-envelope"></i>
-                        <span>clinibienvital@gmail.com</span>
-                    </a>
+        </section>
+
+        <section class="seccion-clinica fondo-blanco">
+            <div class="contenedor-ancho cta-band">
+                <div>
+                    <p class="eyebrow">Atencion especializada</p>
+                    <h2 class="titulo-seccion titulo-seccion-left">Conoce nuestras especialidades y coordina tu evaluacion.</h2>
+                    <p class="cta-text">Podemos ayudarte a encontrar el profesional y la linea de tratamiento mas adecuada para tu necesidad.</p>
+                </div>
+                <div class="cta-band-actions">
+                    <a href="especialidades.html" class="btn-primario">Ver especialidades</a>
+                    <a href="https://wa.me/56998377622" class="btn-secundario js-whatsapp-trigger" data-whatsapp-message="Hola, quiero comunicarme con el centro CliniBienVital.">Hablar con el centro</a>
                 </div>
             </div>
-            <div class="redes-sociales">
-                <h3>Síguenos</h3>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="contenedor-ancho footer-grid">
+            <div class="footer-brand">
+                <h3>CliniBienVital</h3>
+                <p>Centro orientado a la atencion integral, la rehabilitacion funcional y el bienestar de cada paciente.</p>
+            </div>
+            <div class="footer-block">
+                <h4>Contacto</h4>
+                <a href="tel:+56998377622" class="footer-link"><i class="fas fa-phone-alt"></i> +56 9 9837 7622</a>
+                <a href="mailto:clinibienvital@gmail.com" class="footer-link"><i class="fas fa-envelope"></i> clinibienvital@gmail.com</a>
+                <p class="footer-text"><i class="fas fa-location-dot"></i> Av. Echenique 5037, Nunoa, Santiago</p>
+            </div>
+            <div class="footer-block">
+                <h4>Acceso rapido</h4>
+                <a href="index.html" class="footer-link">Inicio</a>
+                <a href="nosotros.html" class="footer-link">Nosotros</a>
+                <a href="especialidades.html" class="footer-link">Especialidades</a>
+            </div>
+            <div class="footer-block">
+                <h4>Siguenos</h4>
                 <div class="iconos-redes">
                     <a href="https://www.facebook.com/profile.php?id=61587765522355" class="icono-red" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/clinibienvital" class="icono-red" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/56998377622" class="icono-red" target="_blank" title="Escríbenos por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/56998377622" class="icono-red js-whatsapp-trigger" title="Escribenos por WhatsApp" data-whatsapp-message="Hola, quiero comunicarme con CliniBienVital por WhatsApp."><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
+
+    <a href="https://wa.me/56998377622" class="whatsapp-float js-whatsapp-trigger" aria-label="Contactar por WhatsApp" data-whatsapp-message="Hola, quiero comunicarme con CliniBienVital.">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div id="whatsappModal" class="whatsapp-modal" aria-hidden="true">
+        <div class="whatsapp-modal-card" role="dialog" aria-modal="true" aria-labelledby="whatsappModalTitle">
+            <button type="button" class="whatsapp-modal-close" id="cerrarWhatsappModal" aria-label="Cerrar panel de WhatsApp">&times;</button>
+            <div class="whatsapp-modal-header">
+                <span class="whatsapp-badge"><i class="fab fa-whatsapp"></i> WhatsApp</span>
+                <h3 id="whatsappModalTitle">Conversemos por WhatsApp</h3>
+                <p>Te responderemos a la brevedad para orientarte y ayudarte a coordinar tu atencion.</p>
+            </div>
+            <div class="whatsapp-preview">
+                <div class="whatsapp-preview-label">Mensaje sugerido</div>
+                <p id="whatsappPreviewText">Hola, quiero comunicarme con CliniBienVital.</p>
+            </div>
+            <div class="whatsapp-modal-actions">
+                <a href="https://wa.me/56998377622" id="whatsappContinueLink" class="btn-primario">Continuar a WhatsApp</a>
+                <button type="button" class="btn-secundario whatsapp-cancel" id="cancelarWhatsappModal">Seguir navegando</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

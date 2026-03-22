@@ -61,3 +61,59 @@ if (modalImagen && imgAmpliacion && cerrarModal) {
         }
     });
 }
+
+// ==========================================================================
+// 4. PANEL DE WHATSAPP DENTRO DE LA PAGINA
+// ==========================================================================
+const whatsappModal = document.getElementById('whatsappModal');
+const whatsappContinueLink = document.getElementById('whatsappContinueLink');
+const whatsappPreviewText = document.getElementById('whatsappPreviewText');
+const cerrarWhatsappModal = document.getElementById('cerrarWhatsappModal');
+const cancelarWhatsappModal = document.getElementById('cancelarWhatsappModal');
+const whatsappTriggers = document.querySelectorAll('.js-whatsapp-trigger');
+
+if (whatsappModal && whatsappContinueLink && whatsappPreviewText) {
+    const abrirWhatsappModal = (mensaje) => {
+        const texto = mensaje || 'Hola, quiero comunicarme con CliniBienVital.';
+        const url = `https://wa.me/56998377622?text=${encodeURIComponent(texto)}`;
+
+        whatsappPreviewText.textContent = texto;
+        whatsappContinueLink.href = url;
+        whatsappModal.classList.add('is-open');
+        whatsappModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    };
+
+    const cerrarPanelWhatsapp = () => {
+        whatsappModal.classList.remove('is-open');
+        whatsappModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    };
+
+    whatsappTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (event) => {
+            event.preventDefault();
+            abrirWhatsappModal(trigger.dataset.whatsappMessage);
+        });
+    });
+
+    if (cerrarWhatsappModal) {
+        cerrarWhatsappModal.addEventListener('click', cerrarPanelWhatsapp);
+    }
+
+    if (cancelarWhatsappModal) {
+        cancelarWhatsappModal.addEventListener('click', cerrarPanelWhatsapp);
+    }
+
+    whatsappModal.addEventListener('click', (event) => {
+        if (event.target === whatsappModal) {
+            cerrarPanelWhatsapp();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && whatsappModal.classList.contains('is-open')) {
+            cerrarPanelWhatsapp();
+        }
+    });
+}
